@@ -22,7 +22,7 @@
             "name": "I open the login page",
             "result": {
               "status": "passed",
-              "duration": 4920000000
+              "duration": 4728000000
             }
           },
           {
@@ -32,7 +32,7 @@
             "name": "I enter valid username and password",
             "result": {
               "status": "passed",
-              "duration": 887000000
+              "duration": 829000000
             }
           },
           {
@@ -42,7 +42,7 @@
             "name": "I click the login button",
             "result": {
               "status": "passed",
-              "duration": 522000000
+              "duration": 594000000
             }
           },
           {
@@ -52,7 +52,6 @@
             "name": "I should see a success message",
             "result": {
               "status": "failed",
-              "duration": 1000000,
               "error_message": "AssertionError: Timed out retrying after 4000ms: expected '<div#flash.flash.error>' to contain text 'You logged into a secure area!', but the text was '\\n            Your username is invalid!\\n            ×\\n          '\n    + expected - actual\n\n    -'\\n            Your username is invalid!\\n            ×\\n          '\n    +'You logged into a secure area!'\n\n    at Context.eval (cypress/support/step_definitions/loginSteps.js:34:19)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)\n    at getRet (http://the-internet.herokuapp.com/__cypress/runner/cypress_runner.js:120949:20)\n    at tryCatcher (http://the-internet.herokuapp.com/__cypress/runner/cypress_runner.js:1777:23)\n    at Promise.attempt.Promise.try (http://the-internet.herokuapp.com/__cypress/runner/cypress_runner.js:4285:29)\n    at Context.thenFn (http://the-internet.herokuapp.com/__cypress/runner/cypress_runner.js:120960:66)\n    at Context.then (http://the-internet.herokuapp.com/__cypress/runner/cypress_runner.js:121211:21)\n    at wrapped (http://the-internet.herokuapp.com/__cypress/runner/cypress_runner.js:141532:19)"
             }
           },
@@ -82,7 +81,7 @@
             "name": "I open the login page",
             "result": {
               "status": "passed",
-              "duration": 349000000
+              "duration": 373000000
             }
           },
           {
@@ -92,7 +91,7 @@
             "name": "I enter invalid username and password",
             "result": {
               "status": "passed",
-              "duration": 647000000
+              "duration": 528000000
             }
           },
           {
@@ -102,7 +101,7 @@
             "name": "I click the login button",
             "result": {
               "status": "passed",
-              "duration": 350000000
+              "duration": 322000000
             }
           },
           {
@@ -112,7 +111,7 @@
             "name": "I should see an invalid username message",
             "result": {
               "status": "passed",
-              "duration": 15000000
+              "duration": 7000000
             }
           }
         ]
@@ -132,7 +131,7 @@
             "name": "I open the login page",
             "result": {
               "status": "passed",
-              "duration": 323000000
+              "duration": 401000000
             }
           },
           {
@@ -142,7 +141,7 @@
             "name": "I only enter the password",
             "result": {
               "status": "passed",
-              "duration": 534000000
+              "duration": 419000000
             }
           },
           {
@@ -152,7 +151,7 @@
             "name": "I click the login button",
             "result": {
               "status": "passed",
-              "duration": 697000000
+              "duration": 325000000
             }
           },
           {
@@ -162,7 +161,7 @@
             "name": "I should see a generic error message",
             "result": {
               "status": "passed",
-              "duration": 5000000
+              "duration": 9000000
             }
           }
         ]

@@ -8,10 +8,11 @@ module.exports = defineConfig({
     setupNodeEvents(on, config) {
       on("file:preprocessor", cucumber());
     },
-    screenshotOnRunFailure: true,
-    video: true,
-    videoCompression: 32,
     retries: 2,
     baseUrl: "http://the-internet.herokuapp.com"
-  }
+  },
+  video: true,
+  videoCompression: 32,
+  screenshotOnRunFailure: true,
+  trashAssetsBeforeRuns: true
 });
