@@ -1,23 +1,29 @@
 import { Given, When, Then } from 'cypress-cucumber-preprocessor/steps';
 
-const URL = 'http://the-internet.herokuapp.com/login';
+let loginData;
+
+before(() => {
+  cy.fixture('loginData').then((data) => {
+    loginData = data;
+  });
+});
 
 Given('I open the login page', () => {
-  cy.visit(URL);
+  cy.visit("/login");
 });
 
 When('I enter valid username and password', () => {
-  cy.get('#username').type('tomsmith');
-  cy.get('#password').type('SuperSecretPassword!');
+  cy.get('#username').type(loginData.valid.username);
+  cy.get('#password').type(loginData.valid.password);
 });
 
 When('I enter invalid username and password', () => {
-  cy.get('#username').type('wronguser');
-  cy.get('#password').type('wrongpass');
+  cy.get('#username').type(loginData.invalid.username);
+  cy.get('#password').type(loginData.invalid.password);
 });
 
 When('I only enter the password', () => {
-  cy.get('#password').type('SuperSecretPassword!');
+  cy.get('#password').type(loginData.valid.password);
 });
 
 When('I click the login button', () => {
